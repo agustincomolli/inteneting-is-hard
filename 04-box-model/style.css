@@ -1,0 +1,58 @@
+/* Resetear estilos */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+h1,
+p {
+ background-color: #DDE0E3; /* light gray */
+}
+
+em,
+strong {
+  background-color: #B2D6FF; /* light blue*/
+}
+
+h1 {
+  padding: 50px;
+  border-bottom: 1px solid #5D6063;
+}
+
+p {
+  /* Escribir cada propiedad */
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  /* Vertical, Horizontal */
+  padding: 20px 10px;
+  /* Top  Right  Bottom  Left */
+  padding: 20px 0 20px 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.no-collapse {
+  padding: 1px;
+}
+
+.button {
+  color: #fff;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  width: 200px;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
