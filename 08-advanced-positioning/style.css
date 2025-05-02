@@ -7,6 +7,7 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   height: 1200px;
+  color: #5D6063;
 }
 
 .container {
@@ -26,10 +27,10 @@ body {
   display: block;
 }
 
-.item-relative{
+.item-relative {
   position: relative;
-  top:30px;
-  left:30px;
+  top: 30px;
+  left: 30px;
 }
 
 .item-absolute {
@@ -42,8 +43,71 @@ body {
   position: relative;
 }
 
-.item-fixed{
+.item-fixed {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px;
+  background: #D6E9FE;
+}
+
+.menu {
+  margin-top: 15px;
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.menu-link,
+.menu-link:visited {
+  color: #5D6063;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.submenu-text {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.submenu-text:hover {
+  text-decoration: underline;
+}
+
+.feature-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  border-radius: 5px;
+  background-color: #B2D6FF;
+  padding-top: 60px;
+  position: absolute;
+  top: -25px;
+  left: -10px;
+  z-index: 1;
+}
+
+.feature-menu>.menu-item {
+  border-bottom: 1px solid #fff;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.feature-menu>.menu-item:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown {
+  position: relative;
 }
